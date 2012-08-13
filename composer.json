@@ -2,7 +2,7 @@
     "name": "exeu/amazon-ecs-bundle",
     "type": "symfony-bundle",
     "description": "Exeu Amazon ECS Bundle",
-    "keywords": ["Amazon", "Bundle", "Advertising", "SOPA", "ECS"],
+    "keywords": ["Amazon", "Bundle", "Advertising", "SOAP", "ECS"],
     "homepage": "https://github.com/Exeu/ExeuAmazonECSBundle",
     "license": "Apache-2.0",
     "authors": [
