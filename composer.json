@@ -1,9 +1,9 @@
 {
-    "name": "exeu/misc-bundle",
+    "name": "exeu/amazon-ecs-bundle",
     "type": "symfony-bundle",
-    "description": "Exeu Misc Bundle",
-    "keywords": ["Extras", "Features", "Twig", "Doctrine"],
-    "homepage": "https://github.com/Exeu/ExeuMiscBundle",
+    "description": "Exeu Amazon ECS Bundle",
+    "keywords": ["Amazon", "Bundle", "Advertising", "SOPA", "ECS"],
+    "homepage": "https://github.com/Exeu/ExeuAmazonECSBundle",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -14,14 +14,10 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": "2.*"
-    },
-    "require-dev": {
-        "beberlei/DoctrineExtensions": "*",
-        "symfony/validator" : "*"
+        "exeu/amazon-ecs-php": "dev-master"
     },
     "autoload": {
-        "psr-0": { "Exeu\\MiscBundle": "" }
+        "psr-0": { "Exeu\\AmazonECSBundle": "" }
     },
-    "target-dir": "Exeu/MiscBundle"
+    "target-dir": "Exeu/AmazonECSBundle"
 }
