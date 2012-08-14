@@ -9,7 +9,7 @@ Comming soon..
 
 Jenkins:
 
-Comming soon..
+[![Build Status](http://ci.pixel-web.org/job/ExeuAmazonECSBundle/badge/icon)](http://ci.pixel-web.org/job/ExeuAmazonECSBundle/)
 
 ## Installation
 
@@ -38,7 +38,7 @@ $loader->registerNamespaces(array(
     // ...
 ));
 
-require_once __DIR__.'/../vendor/amazon_ecs_php_library/lib/AmazonECS.class.php'
+require __DIR__.'/../vendor/amazon_ecs_php_library/lib/AmazonECS.class.php';
 ```
 
 Now run the vendors script:
@@ -92,3 +92,28 @@ exeu_amazon_ecs:
     country: COUNTRY CODE
     associate_tag: YOUR_ASSOCIATE_TAG
 ```
+
+## Usage ##
+
+To work with the Amazon Product Advertising API you need to get the new service for example in your controller:
+
+``` php
+<?php
+
+$amazonEcs = $this->get('exeu_amazon_ecs.pa');
+
+```
+
+Now you can execute your first searchrequest:
+
+``` php
+<?php
+
+// ...
+$result = $amazonEcs->category('Blended')->search('PHP 5');
+
+var_dump($result);
+
+```
+
+For more detailed information See: [Amazon-ECS-PHP-Library - Examples](https://github.com/Exeu/Amazon-ECS-PHP-Library/tree/master/samples) )
