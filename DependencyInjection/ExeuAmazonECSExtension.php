@@ -39,7 +39,7 @@ class ExeuAmazonECSExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
-        
+
         $container->getDefinition('exeu_amazon_ecs.pa')
             ->replaceArgument(0, $config['access_key'])
             ->replaceArgument(1, $config['secret_key'])
